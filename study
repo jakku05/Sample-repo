@@ -50,42 +50,52 @@ TECHNICAL ASSESSMENT
  
 Describe the benefits of using a load balancer within an application:
  
-1.	Improved Availability: Ensures continuous service by distributing traffic across multiple servers.
-2.	Enhanced Performance: Prevents server overload, maintaining optimal performance.
-3.	Scalability: Easily add or remove servers to handle varying traffic loads.
-4.	Efficient Resource Use: Balances workloads to optimize server capacity.
-5.	Better User Experience: Maintains fast response times and smooth operation.
-6.	Simplified Maintenance: Allows for server maintenance without downtime.
-7.	Security: Provides additional protection against attacks with built-in security features.
+A **load balancer** offers several key benefits for an application:
+
+1. **Scalability**: Distributes traffic across multiple servers, allowing for easier scaling as demand increases.
+2. **High Availability**: Redirects traffic from failed servers to healthy ones, ensuring minimal downtime.
+3. **Performance Optimization**: A load balancer distributes traffic evenly, preventing overloads and reducing latency.
+4. **Fault Tolerance**: rerouting traffic in case of server failures, enhancing system reliability. 
+5. **Simplified Maintenance**: Allows for zero-downtime updates and maintenance by rerouting traffic while servers are being upgraded.
+6. **Geographic Distribution**: Directs users to the nearest server for lower latency and better performance.
+
+In short, a load balancer boosts **performance, availability**, and **scalability** while enhancing **security** and simplifying **maintenance**.
  
-Describe the typical role of an IIS application pool:
- 
-An IIS application pool serves to isolate web applications for better security, performance, and reliability. It groups one or more applications into a single worker process, ensuring that issues in one application do not affect others. This isolation helps manage resources efficiently and simplifies maintenance
+Describe the typical role of an IIS application pool
+it is used host and manage websites and web applications. it keeps web applications separate from each other, so they don’t interfere with one another.
+It helps make sure each application runs smoothly and securely by managing resources like memory and handling automatic restarts when needed.
+
 
 Describe the steps required to perform a SQL failover from an active to a passive node:
- 
-	Use Failover Cluster Manager > Roles > SQL Server role.
-	On Action tab, select 'Move' and select the node to move the role to.
-	Observe that all resources that SQL Server role depend upon are moved to another node and SQL Server role is now running on new node as well.
+
+1. **Check the status**: Ensure that the passive node is ready and synchronized with the active node.
+2. **Connect to the SQL Server**: Use SQL Server Management Studio (SSMS) or PowerShell to connect to the cluster.
+3. **Initiate failover**: In SSMS, right-click on the Availability Group or Always On feature and choose the "Failover" option. Or, use PowerShell to run the failover command.
+4. **Confirm failover**: Verify that the passive node has become the active node and is running correctly.
+5. **Monitor**: Ensure that applications and services are connecting to the new active node without issues.
+
+This process switches control to the passive server in case the active server has issues, ensuring continuous availability.	
  
 Describe what a connection string is and where these are typically stored:
  
-A connection string is a string of parameters used by an application to connect to a database or data source. It includes details like the server name, database name, user ID, and password.
-Typical Storage Locations:
-	Configuration Files: Commonly stored in application configuration files (e.g., web.config or app.config in .NET applications).
-	Environment Variables: Stored as environment variables for better security and flexibility.
-	Secrets Management Tools: Stored in dedicated secrets management tools like Azure Key Vault or AWS Secrets Manager for enhanced security
-	.
+A connection string is a set of information that tells an application how to connect to a database. It typically includes details like the server name, database name, user credentials, and other settings needed for the connection.
+
+Connection strings are usually stored in configuration files, such as:
+
+Web.config or App.config files for .NET applications
+Environment variables for secure access
  
 Describe what DNS is and how it works:
  
-	The Internet's DNS system works much like a phone book by managing the mapping between names and numbers. DNS servers translate requests for names into IP addresses, controlling which server an end user will reach when they type a domain name into their web browser. These requests are called queries.
- 
-Describe what IAAS, PAAS and SASS are:
- 
-	IAAS  : Infrastructure as a Service
-	PAAS : Platform as a Service
-	SAAS : Software as a Service
+"DNS (Domain Name System) translates human-readable website names (like www.ansible.com) into IP addresses. 
+For example, when you browse a URL like www.ansible.com, DNS looks up the corresponding IP address for that domain and uses it to connect to the website's server and load the page
+DNS makes it easier for us to use websites without remembering complex IP addresses.
+
+:
+ Describe what IAAS, PAAS and SASS are
+IaaS (Infrastructure as a Service): Provides virtualized computing resources over the internet, such as servers, storage, and networking. Aws azure gcp Oracle Cloud Infrastructure 
+PaaS (Platform as a Service): Offers a platform that allows developers to build, deploy, and manage applications without worrying about the underlying infrastructure. AWS Elastic Beanstalk
+SAAS : Software as a Service prodiving software applications over the internet on a subscription basis. The provider manages everything, including infrastructure, software, and updates.
  
 Describe the five HTTP response groups:
  
@@ -97,19 +107,26 @@ Describe the five HTTP response groups:
  
 Describe the types of SQL joins:
  
-	Inner : Returns records that have matching values in both tables. 
-	Left Outer : Returns all records from the left table, and the matched records from the right table.
-	Right Outer : Returns all records from the right table, and the matched records from the left table. 
-	Full : Returns all records when there is a match in either left or right table.
+INNER JOIN: Only returns rows that have matching data in both tables.
+LEFT JOIN: Returns all rows from the left table and matched rows from the right table. If no match, it shows NULL for the right table.
+RIGHT JOIN: Returns all rows from the right table and matched rows from the left table. If no match, it shows NULL for the left table.
+FULL JOIN: Returns all rows from both tables, with NULLs where there’s no match.
+CROSS JOIN: Combines every row from the first table with every row from the second table (creates all possible pairs).
+
+
  
 Describe what Servers, SQL Instances, Databases, Tables and Store Procedures are:
- 
-	Server : Is a type of host that receives, stores, and sends data to clients.
-	Instance : Microsoft SQL Server (MS-SQL) has a feature called named instances. This feature lets you run multiple databases on the same host (or clustered hosts) with separate settings. Each database instance runs on its own port.
-	Database : is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).
-	Tables :  Are database objects that contain all the data in a database. In tables, data is logically organized in a row-and-column format similar to a spreadsheet. Each row represents a unique record, and each column represents a field in the record.
-	Stored Procedures : Are subroutines that can contain one or more SQL statements that perform a specific task. 
- 
+
+Servers: A server is a powerful computer that stores data, runs applications, and provides services to other computers over a network.
+
+SQL Instances: An SQL instance is like a "running copy" of SQL Server on a server. It holds and manages databases, and we can have multiple instances on one server.
+
+Databases: A database is a collection of organized data stored in SQL. It’s like a digital filing cabinet where data is kept for easy access.
+
+Tables: A table is where data is stored inside a database. It’s organized in rows (records) and columns (data categories), like a spreadsheet.
+
+Stored Procedures: A stored procedure is a set of pre-written instructions or commands that run automatically to perform tasks, like adding or updating data.
+
 Describe the 5 typical categories of Windows event logs:
  
 	Application : Information logged by applications hosted on the local machine.
@@ -118,9 +135,9 @@ Describe the 5 typical categories of Windows event logs:
 	System : Messages generated by the Windows operating system.
 	Forwarded Events :  Events forwarded by other computers when the local machine is functioning as a central subscriber.
  
-Describe what a multi-tiered architecture is:
+(often refeDescribe what a multi-tiered architecture is:
  
-	Multi-Tier Architecture (often referred to as n-tier architecture) or multi-layered architecture is a client–server architecture in which presentation, application processing and data management functions are physically separated. The most widespread use of multitier architecture is the three-tier architecture.
+	Multi-Tier Architecture rred to as n-tier architecture) or multi-layered architecture is a client–server architecture in which presentation, application processing and data management functions are physically separated. The most widespread use of multitier architecture is the three-tier architecture.
  
 TECHNICAL ASSESSMENT AWS SPECIFIC
  
