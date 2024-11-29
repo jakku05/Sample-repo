@@ -95,13 +95,15 @@ IaaS (Infrastructure as a Service): Provides virtualized computing resources ove
 PaaS (Platform as a Service): Offers a platform that allows developers to build, deploy, and manage applications without worrying about the underlying infrastructure. AWS Elastic Beanstalk
 SAAS : Software as a Service prodiving software applications over the internet on a subscription basis. The provider manages everything, including infrastructure, software, and updates.
  
-Describe the five HTTP response groups:??????????
+Describe the five HTTP hyper text transfer protool response groups:??????????
+
+it is used to pmmuniation between lient and server
  
-	100 > 199 : Informational 
-	200 > 299 : Successful
-	300 > 399 : Redirection
-	400 > 499 : Client Error
-	500 > 599 : Server Error 
+	100 > 199 : Informational (the info is recevied and process is continuning )
+	200 > 299 : Successful (the info is recevied accepted and accepted)
+	300 > 399 : Redirection (the requested resource has moved to diff url)
+	400 > 499 : Client Error (invalid request  unthorized access)
+	500 > 599 : Server Error (server not able to fullfill the request due to internal issue)
  
 Describe the types of SQL joins:
  
