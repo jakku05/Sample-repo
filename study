@@ -48,9 +48,7 @@ PROCESS ASSESSMENT
  
 TECHNICAL ASSESSMENT
  
-Describe the benefits of using a load balancer within an application:
- 
-A **load balancer** offers several key benefits for an application:
+Describe the benefits of using a load balancer within an application??????????
 
 1. **Scalability**: Distributes traffic across multiple servers, allowing for easier scaling as demand increases.
 2. **High Availability**: Redirects traffic from failed servers to healthy ones, ensuring minimal downtime.
@@ -61,12 +59,12 @@ A **load balancer** offers several key benefits for an application:
 
 In short, a load balancer boosts **performance, availability**, and **scalability** while enhancing **security** and simplifying **maintenance**.
  
-Describe the typical role of an IIS application pool
+Describe the typical role of an IIS application pool ??????????
 it is used host and manage websites and web applications. it keeps web applications separate from each other, so they don’t interfere with one another.
 It helps make sure each application runs smoothly and securely by managing resources like memory and handling automatic restarts when needed.
 
 
-Describe the steps required to perform a SQL failover from an active to a passive node:
+Describe the steps required to perform a SQL failover from an active to a passive node??????????
 
 1. **Check the status**: Ensure that the passive node is ready and synchronized with the active node.
 2. **Connect to the SQL Server**: Use SQL Server Management Studio (SSMS) or PowerShell to connect to the cluster.
@@ -76,7 +74,7 @@ Describe the steps required to perform a SQL failover from an active to a passiv
 
 This process switches control to the passive server in case the active server has issues, ensuring continuous availability.	
  
-Describe what a connection string is and where these are typically stored:
+Describe what a connection string is and where these are typically stored??????????
  
 A connection string is a set of information that tells an application how to connect to a database. It typically includes details like the server name, database name, user credentials, and other settings needed for the connection.
 
@@ -85,19 +83,19 @@ Connection strings are usually stored in configuration files, such as:
 Web.config or App.config files for .NET applications
 Environment variables for secure access
  
-Describe what DNS is and how it works:
+Describe what DNS is and how it works??????????
  
 "DNS (Domain Name System) translates human-readable website names (like www.ansible.com) into IP addresses. 
 For example, when you browse a URL like www.ansible.com, DNS looks up the corresponding IP address for that domain and uses it to connect to the website's server and load the page
 DNS makes it easier for us to use websites without remembering complex IP addresses.
 
 :
- Describe what IAAS, PAAS and SASS are
+ Describe what IAAS, PAAS and SASS are??????????
 IaaS (Infrastructure as a Service): Provides virtualized computing resources over the internet, such as servers, storage, and networking. Aws azure gcp Oracle Cloud Infrastructure 
 PaaS (Platform as a Service): Offers a platform that allows developers to build, deploy, and manage applications without worrying about the underlying infrastructure. AWS Elastic Beanstalk
 SAAS : Software as a Service prodiving software applications over the internet on a subscription basis. The provider manages everything, including infrastructure, software, and updates.
  
-Describe the five HTTP response groups:
+Describe the five HTTP response groups:??????????
  
 	100 > 199 : Informational 
 	200 > 299 : Successful
@@ -107,7 +105,7 @@ Describe the five HTTP response groups:
  
 Describe the types of SQL joins:
  
-INNER JOIN: Only returns rows that have matching data in both tables.
+INNER JOIN: Only returns rows that have matching data in both tables.??????????
 LEFT JOIN: Returns all rows from the left table and matched rows from the right table. If no match, it shows NULL for the right table.
 RIGHT JOIN: Returns all rows from the right table and matched rows from the left table. If no match, it shows NULL for the left table.
 FULL JOIN: Returns all rows from both tables, with NULLs where there’s no match.
@@ -115,7 +113,7 @@ CROSS JOIN: Combines every row from the first table with every row from the seco
 
 
  
-Describe what Servers, SQL Instances, Databases, Tables and Store Procedures are:
+Describe what Servers, SQL Instances, Databases, Tables and Store Procedures are??????????
 
 Servers: A server is a powerful computer that stores data, runs applications, and provides services to other computers over a network.
 
@@ -127,7 +125,7 @@ Tables: A table is where data is stored inside a database. It’s organized in r
 
 Stored Procedures: A stored procedure is a set of pre-written instructions or commands that run automatically to perform tasks, like adding or updating data.
 
-Describe the 5 typical categories of Windows event logs:
+Describe the 5 typical categories of Windows event logs??????????
  
 	Application : Information logged by applications hosted on the local machine.
 	Security : Information related to login attempts (success and failure), elevated privileges, and other audited events.
@@ -135,23 +133,23 @@ Describe the 5 typical categories of Windows event logs:
 	System : Messages generated by the Windows operating system.
 	Forwarded Events :  Events forwarded by other computers when the local machine is functioning as a central subscriber.
  
-(often refeDescribe what a multi-tiered architecture is:
+(often refeDescribe what a multi-tiered architecture is??????????
  
 	Multi-Tier Architecture rred to as n-tier architecture) or multi-layered architecture is a client–server architecture in which presentation, application processing and data management functions are physically separated. The most widespread use of multitier architecture is the three-tier architecture.
  
 TECHNICAL ASSESSMENT AWS SPECIFIC
  
-Describe the three basic cloud AWS services:
+Describe the three basic cloud AWS services??????????
  
 	Compute : EC2, Elastic Beanstalk, Lambda, Auto-Scaling, Lightsail
 	Networking : VPC, CloudFront, Route53
 	Storage : S3, Glacier, Elastic Block Storage, Elastic File System
  
-Describe the relation between the Availability Zone and Region:
+Describe the relation between the Availability Zone and Region??????????
  
 	AWS regions are separate geographical areas, like the US-West 1 (North California) and Asia South (Mumbai). On the other hand, availability zones are the areas that are present inside the regions. These are generally isolated zones that can replicate themselves whenever required.
  
-Describe the tooling that could be used to manage AWS resources:
+Describe the tooling that could be used to manage AWS resources??????????
  
 	AWS CLI for Linux
 	AWS CLI for Windows
