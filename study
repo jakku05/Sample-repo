@@ -1,0 +1,144 @@
+VISULAISING THE ROLE
+ 
+What technical skills can you bring to the team?
+ 
+	Automation
+	AWS
+	Azure
+	Cloud
+	Code
+	Containers
+	Databases
+	Datadog
+	Grafana
+	Kubernetes
+	Linux
+	Monitoring
+	Networking
+	Postman
+	PowerShell
+	Prometheus
+	Python
+	SCOM
+	Scripting
+	SFTP
+	Source Control
+	Splunk
+	SQL
+	What's Up Gold
+	Windows
+ 
+What documentation tools have you used?
+ 
+	Confluent
+	Markdown
+	Office 
+	OneNote
+ 
+PROCESS ASSESSMENT
+ 
+	Describe the differences between an Incident and a Problem.
+	Describe how PowerShell could be utilised when triaging incidents.
+	Explain how you would prepare for a significant business event where systems and process would be heavily utilised.
+	How would you go about identifying and implementing a requirement that could improve the efficiency of the team?
+	One of our clients has reported there has been an impact at their end when calling through to our API. All they have given you to investigate the issue is the time when this occurred. Demonstrate some logical steps on how you would go about diagnosing this incident?
+	You’ve identified a major issue that needs immediate attention. What processes are followed?
+	You've noticed that a less experienced member of the team is struggling with their work. How would you address this?
+	What information would you typically need to begin triaging an incident?
+ 
+TECHNICAL ASSESSMENT
+ 
+Describe the benefits of using a load balancer within an application:
+ 
+1.	Improved Availability: Ensures continuous service by distributing traffic across multiple servers.
+2.	Enhanced Performance: Prevents server overload, maintaining optimal performance.
+3.	Scalability: Easily add or remove servers to handle varying traffic loads.
+4.	Efficient Resource Use: Balances workloads to optimize server capacity.
+5.	Better User Experience: Maintains fast response times and smooth operation.
+6.	Simplified Maintenance: Allows for server maintenance without downtime.
+7.	Security: Provides additional protection against attacks with built-in security features.
+ 
+Describe the typical role of an IIS application pool:
+ 
+An IIS application pool serves to isolate web applications for better security, performance, and reliability. It groups one or more applications into a single worker process, ensuring that issues in one application do not affect others. This isolation helps manage resources efficiently and simplifies maintenance
+
+Describe the steps required to perform a SQL failover from an active to a passive node:
+ 
+	Use Failover Cluster Manager > Roles > SQL Server role.
+	On Action tab, select 'Move' and select the node to move the role to.
+	Observe that all resources that SQL Server role depend upon are moved to another node and SQL Server role is now running on new node as well.
+ 
+Describe what a connection string is and where these are typically stored:
+ 
+A connection string is a string of parameters used by an application to connect to a database or data source. It includes details like the server name, database name, user ID, and password.
+Typical Storage Locations:
+	Configuration Files: Commonly stored in application configuration files (e.g., web.config or app.config in .NET applications).
+	Environment Variables: Stored as environment variables for better security and flexibility.
+	Secrets Management Tools: Stored in dedicated secrets management tools like Azure Key Vault or AWS Secrets Manager for enhanced security
+	.
+ 
+Describe what DNS is and how it works:
+ 
+	The Internet's DNS system works much like a phone book by managing the mapping between names and numbers. DNS servers translate requests for names into IP addresses, controlling which server an end user will reach when they type a domain name into their web browser. These requests are called queries.
+ 
+Describe what IAAS, PAAS and SASS are:
+ 
+	IAAS  : Infrastructure as a Service
+	PAAS : Platform as a Service
+	SAAS : Software as a Service
+ 
+Describe the five HTTP response groups:
+ 
+	100 > 199 : Informational 
+	200 > 299 : Successful
+	300 > 399 : Redirection
+	400 > 499 : Client Error
+	500 > 599 : Server Error 
+ 
+Describe the types of SQL joins:
+ 
+	Inner : Returns records that have matching values in both tables. 
+	Left Outer : Returns all records from the left table, and the matched records from the right table.
+	Right Outer : Returns all records from the right table, and the matched records from the left table. 
+	Full : Returns all records when there is a match in either left or right table.
+ 
+Describe what Servers, SQL Instances, Databases, Tables and Store Procedures are:
+ 
+	Server : Is a type of host that receives, stores, and sends data to clients.
+	Instance : Microsoft SQL Server (MS-SQL) has a feature called named instances. This feature lets you run multiple databases on the same host (or clustered hosts) with separate settings. Each database instance runs on its own port.
+	Database : is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).
+	Tables :  Are database objects that contain all the data in a database. In tables, data is logically organized in a row-and-column format similar to a spreadsheet. Each row represents a unique record, and each column represents a field in the record.
+	Stored Procedures : Are subroutines that can contain one or more SQL statements that perform a specific task. 
+ 
+Describe the 5 typical categories of Windows event logs:
+ 
+	Application : Information logged by applications hosted on the local machine.
+	Security : Information related to login attempts (success and failure), elevated privileges, and other audited events.
+	Setup : Messages generated when installing and upgrading the Windows operating system. If the Windows system is a domain controller, those messages are also logged here.
+	System : Messages generated by the Windows operating system.
+	Forwarded Events :  Events forwarded by other computers when the local machine is functioning as a central subscriber.
+ 
+Describe what a multi-tiered architecture is:
+ 
+	Multi-Tier Architecture (often referred to as n-tier architecture) or multi-layered architecture is a client–server architecture in which presentation, application processing and data management functions are physically separated. The most widespread use of multitier architecture is the three-tier architecture.
+ 
+TECHNICAL ASSESSMENT AWS SPECIFIC
+ 
+Describe the three basic cloud AWS services:
+ 
+	Compute : EC2, Elastic Beanstalk, Lambda, Auto-Scaling, Lightsail
+	Networking : VPC, CloudFront, Route53
+	Storage : S3, Glacier, Elastic Block Storage, Elastic File System
+ 
+Describe the relation between the Availability Zone and Region:
+ 
+	AWS regions are separate geographical areas, like the US-West 1 (North California) and Asia South (Mumbai). On the other hand, availability zones are the areas that are present inside the regions. These are generally isolated zones that can replicate themselves whenever required.
+ 
+Describe the tooling that could be used to manage AWS resources:
+ 
+	AWS CLI for Linux
+	AWS CLI for Windows
+	AWS CLI for Windows CMD
+	AWS SDK
+	Eclipse
+	Putty
