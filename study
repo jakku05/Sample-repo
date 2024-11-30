@@ -121,7 +121,7 @@ Servers: A server is a powerful computer that stores data, runs applications, an
 
 SQL Instances: An SQL instance is like a "running copy" of SQL Server on a server. It holds and manages databases, and we can have multiple instances on one server.
 
-Databases: A database is a collection of organized data stored in SQL. It’s like a digital filing cabinet where data is kept for easy access.
+Databases:database is an organized collection of data stored in SQL. It’s like a virtual storage container where information is neatly arranged for quick and easy retrieval..
 
 Tables: A table is where data is stored inside a database. It’s organized in rows (records) and columns (data categories), like a spreadsheet.
 
