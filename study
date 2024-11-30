@@ -154,10 +154,11 @@ Describe the three basic cloud AWS services??????????
  
 Describe the relation between the Availability Zone and Region??????????
  
-	AWS regions are separate geographical areas, like the US-West 1 (North California) and Asia South (Mumbai). On the other hand, availability zones are the areas that are present inside the regions. These are generally isolated zones that can replicate themselves whenever required.
- 
+Region: A region is a geographical area where a cloud provider has data centers. Each region consists of multiple Availability Zones.
+Availability Zone (AZ): An Availability Zone is a distinct data center or a group of data centers within a region. Each AZ is isolated from others in the same region,
+providing redundancy and fault tolerance. AZs are connected by low-latency links to ensure high availability.
+
 Describe the tooling that could be used to manage AWS resources??????????
- 
 	AWS CLI for Linux
 	AWS CLI for Windows
 	AWS CLI for Windows CMD
