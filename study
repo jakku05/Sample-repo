@@ -136,9 +136,24 @@ Describe the 5 typical categories of Windows event logs??????????
 	Forwarded Events :  Events forwarded by other computers when the local machine is functioning as a central subscriber.
  
 (often refeDescribe what a multi-tiered architecture is??????????
- 
-	Multi-Tier Architecture rred to as n-tier architecture) or multi-layered architecture is a client–server architecture in which presentation, application processing and data management functions are physically separated. The most widespread use of multitier architecture is the three-tier architecture.
- 
+ **Multi-tier architecture** (also known as **n-tier architecture**) is a system design where different functions are separated into layers. Each layer handles a specific task, and they work together to deliver the full application.
+
+In simpler terms:
+- **Presentation layer**: What users see and interact with (the front-end).
+- **Logic layer**: Handles the rules and processes (the middle layer).
+- **Data layer**: Stores and manages the data (the back-end).
+
+This separation helps in organizing, scaling, and maintaining the system more efficiently.
+In simpler terms:
+
+Presentation layer: What users see and interact with (the front-end).
+Logic layer: Handles the rules and processes (the middle layer).
+Data layer: Stores and manages the data (the back-end).
+In simpler terms:
+
+Presentation layer: What users see and interact with (the front-end).
+Logic layer: Handles the rules and processes (the middle layer).
+Data layer: Stores and manages the data (the back-end).
 TECHNICAL ASSESSMENT AWS SPECIFIC
  
 Describe the three basic cloud AWS services??????????
