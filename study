@@ -143,17 +143,7 @@ In simpler terms:
 - **Logic layer**: Handles the rules and processes (the middle layer).
 - **Data layer**: Stores and manages the data (the back-end).
 
-This separation helps in organizing, scaling, and maintaining the system more efficiently.
-In simpler terms:
 
-Presentation layer: What users see and interact with (the front-end).
-Logic layer: Handles the rules and processes (the middle layer).
-Data layer: Stores and manages the data (the back-end).
-In simpler terms:
-
-Presentation layer: What users see and interact with (the front-end).
-Logic layer: Handles the rules and processes (the middle layer).
-Data layer: Stores and manages the data (the back-end).
 TECHNICAL ASSESSMENT AWS SPECIFIC
  
 Describe the three basic cloud AWS services??????????
