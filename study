@@ -123,7 +123,7 @@ SQL Instances: An SQL instance is like a "running copy" of SQL Server on a serve
 
 Databases:database is an organized collection of data stored in SQL. It’s like a virtual storage container where information is neatly arranged for quick and easy retrieval..
 
-Tables: A table is where data is stored inside a database. It’s organized in rows (records) and columns (data categories), like a spreadsheet.
+Tables:  A table is a collection of data within a database, organized into rows (items) and columns (fields), much like a grid or a database sheet.
 
 Stored Procedures: A stored procedure is a set of pre-written instructions or commands that run automatically to perform tasks, like adding or updating data.
 
